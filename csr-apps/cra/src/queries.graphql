@@ -1,0 +1,31 @@
+query GetWalletInfo($walletInfoInput: WalletInfoInput!) {
+  getWalletInfo(walletInfoInput: $walletInfoInput) {
+    walletAddress
+    isOld
+    lastTransactionTimestamp
+    responseStatus
+  }
+}
+
+query GetBalanceInfo($balanceInfoInput: BalanceInfoInput!) {
+  getBalanceInfo(balanceInfoInput: $balanceInfoInput) {
+    balance
+    responseStatus
+  }
+}
+
+query GetExchangeRate($getExchangeRateInput: GetExchangeRateInput!) {
+  getExchangeRate(getExchangeRateInput: $getExchangeRateInput) {
+    exchangeRateType
+    exchangeRate
+    responseStatus
+  }
+}
+
+mutation SetExchangeRate($setExchangeRateInput: SetExchangeRateInput!) {
+  setExchangeRate(setExchangeRateInput: $setExchangeRateInput) {
+    exchangeRateType
+    exchangeRate
+    responseStatus
+  }
+}
