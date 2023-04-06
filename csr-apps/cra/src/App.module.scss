@@ -1,0 +1,29 @@
+.exchangeRateBalance {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .walletStatus {
+    border: 1px solid;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .exchangeRateForm {
+    border: 1px solid;
+    padding: 16px;
+  }
+
+  .balanceDisplay {
+    border: 1px solid;
+    padding: 16px;
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
